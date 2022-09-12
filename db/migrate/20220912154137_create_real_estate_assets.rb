@@ -4,14 +4,14 @@ class CreateRealEstateAssets < ActiveRecord::Migration[7.0]
       t.string :type, index: true
       t.string :owner
       t.string :address
-      t.integer :rooms
+      t.integer :rooms, default: 0
       t.integer :sqmt
-      t.integer :floors
-      t.boolean :air_cond
+      t.integer :floors, default: 0
+      t.boolean :air_cond, default: false
       t.decimal :price, precision: 11, scale: 2
-      t.integer :units
-      t.integer :shops
-      t.integer :parking
+      t.integer :units, default: 0
+      t.integer :shops, default: 0
+      t.integer :parking, default: 0
 
       t.timestamps
     end

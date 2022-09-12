@@ -1,0 +1,21 @@
+<h1>Real Estate Asset Details</h1>
+
+<p>This <%= @asset.model_name.human %> is at <%= @asset.address %><p>
+<p>This <%= @asset.model_name.human %> costs <%= @asset.price %></p>
+<p>This <%= @asset.model_name.human %> is owned by <%= @asset.owner %></p>
+<p>This <%= @asset.model_name.human %> is <%= @asset.sqmt %>sqmt big</p>
+
+<% if @asset.is_a? House %>
+  <p>This <%= @asset.model_name.human %> has <%= @asset.rooms %> rooms</p>
+  <p>This <%= @asset.model_name.human %> has <%= @asset.floors %> floors</p>
+  <p>This <%= @asset.model_name.human %> has <%= @asset.air_cond ? '' : 'no ' %>air conditioning</p>
+<% end %>
+
+<% if @asset.is_a? ComplexBuilding %>
+  <p>This <%= @asset.model_name.human %> has <%= @asset.units %> units</p>
+<% end %>
+
+<% if @asset.is_a? CommercialUnit %>
+  <p>This <%= @asset.model_name.human %> has <%= @asset.shops %> shops</p>
+  <p>This <%= @asset.model_name.human %> has <%= @asset.parking %> parkings</p>
+<% end %>

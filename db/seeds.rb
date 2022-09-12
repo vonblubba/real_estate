@@ -10,19 +10,22 @@ ComplexBuilding.create(
   owner: 'fake owner 1',
   price: 100000.50,
   address: 'fake street 1',
-  units: 2
+  units: 2,
+  sqmt: 100
 )
 
 CommercialUnit.create(
   owner: 'fake owner 1',
-  price: 100000.50,
+  price: 24559.50,
   address: 'fake street 1',
-  shops: 2
+  shops: 2,
+  sqmt: 50
 )
 
 House.create(
   owner: 'fake owner 1',
-  price: 100000.50,
+  price: 244000.50,
   address: 'fake street 1',
-  rooms: 4
+  rooms: 4,
+  sqmt: 78
 )
