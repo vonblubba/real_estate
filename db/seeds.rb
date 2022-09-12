@@ -5,3 +5,24 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+ComplexBuilding.create(
+  owner: 'fake owner 1',
+  price: 100000.50,
+  address: 'fake street 1',
+  units: 2
+)
+
+CommercialUnit.create(
+  owner: 'fake owner 1',
+  price: 100000.50,
+  address: 'fake street 1',
+  shops: 2
+)
+
+House.create(
+  owner: 'fake owner 1',
+  price: 100000.50,
+  address: 'fake street 1',
+  rooms: 4
+)
