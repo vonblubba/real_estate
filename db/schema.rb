@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_12_154137) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_12_163940) do
   create_table "real_estate_assets", force: :cascade do |t|
     t.string "type"
     t.string "owner"
@@ -25,6 +25,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_12_154137) do
     t.integer "parking", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "asset_picture"
     t.index ["type"], name: "index_real_estate_assets_on_type"
   end
 
