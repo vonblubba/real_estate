@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root 'real_estate_asset#index'
 
-  resources :real_estate_asset, only: [:index, :create, :show]
+  resources :real_estate_asset, only: [:index, :create, :new, :show]
 end

@@ -19,3 +19,5 @@
   <p>This <%= @asset.model_name.human %> has <%= @asset.shops %> shops</p>
   <p>This <%= @asset.model_name.human %> has <%= @asset.parking %> parkings</p>
 <% end %>
+
+<%= image_tag(@asset.asset_picture.url) %>

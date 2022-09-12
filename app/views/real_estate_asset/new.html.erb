@@ -1,0 +1,33 @@
+<h1>New Real Estate Asset</h1>
+
+<%= form_with model: @asset, url: '/real_estate_asset' do |f| %>
+  <%= f.select :type, [["House", "House"], ["Complex Building", "ComplexBuilding"], ["Commercial Unit", "CommercialUnit"]] %>
+  <br>
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+  <br>
+  <%= f.label :owner %>
+  <%= f.text_field :owner %>
+  <br>
+  <%= f.label :price %>
+  <%= f.text_field :price %>
+  <br>
+  <%= f.label :sqmt %>
+  <%= f.text_field :sqmt %>
+  <br>
+  <%= f.label :rooms %>
+  <%= f.text_field :rooms %>
+  <br>
+  <%= f.label :shops %>
+  <%= f.text_field :shops %>
+  <br>
+  <%= f.label :floors %>
+  <%= f.text_field :floors %>
+  <br>
+  <%= f.label :parking %>
+  <%= f.text_field :parking %>
+  <br>
+  <%= f.file_field :asset_picture %>
+  <br>
+  <%= f.submit %>
+<% end %>
