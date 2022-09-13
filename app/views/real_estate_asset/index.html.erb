@@ -1,0 +1,21 @@
+<h1>Real Estate Assets</h1>
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Address</th>
+    <th>Price</th>
+    <th>Actions</th>
+  </tr>
+  <%- @assets.each do |a| -%>
+    <tr>
+      <td><%= a.model_name.human %></td>
+      <td><%= a.address %></td>
+      <td><%= a.price %></td>
+      <td><%= link_to 'show', real_estate_asset_path(a) %></td>
+    </tr>
+  <%- end -%>
+</table>
+
+<p>
+  <%= link_to 'new asset', new_real_estate_asset_path %>
+</p>
